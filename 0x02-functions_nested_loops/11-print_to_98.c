@@ -13,7 +13,7 @@ void print_to_98(int number)
 	{
 		while (number >= 98)
 		{
-			printf("%d", number);
+			puts( number);
 			number--;
 			if (number > 98)
 			{
