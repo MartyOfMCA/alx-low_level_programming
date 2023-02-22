@@ -36,4 +36,5 @@ void print_to_98(int number)
 			}
 		}
 	}
+	printf("\n");
 }
