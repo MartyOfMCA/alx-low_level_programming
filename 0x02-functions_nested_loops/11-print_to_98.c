@@ -1,45 +1,39 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
  * print_to_98 - Display all natural numbers
  * from the given number to 98
  *
- * @n: the given number
+ * @number: the given number
  **/
-void print_to_98(int n)
+void print_to_98(int number)
 {
-	if (n <= 98)
+	if (number <= 98)
 	{
-		while (n <= 98)
+		while (number <= 98)
 		{
-			if (n < 10)
-				_putchar(n + 48);
-			else
+			printf("%d", number);
+			number++;
+			if (number != 98)
 			{
-				_putchar(n / 10 + 48);
-				_putchar(n % 10 + 48);
-			}
-			if (n < 98)
 				_putchar(',');
-			n++;
+				_putchar(' ');
+			}
 		}
-		_putchar('\n');
 	}
 	else
 	{
-		while (n  >= 98)
+		int lower_bound = 98;
+
+		while (number > lower_bound)
 		{
-			if (n < 10)
-				_putchar(n + 48);
-			else
+			printf("%d", lower_bound);
+			lower_bound++;
+			if (lower_bound != number)
 			{
-				_putchar(n / 10 + 48);
-				_putchar(n % 10 + 48);
-			}
-			if (n > 98)
 				_putchar(',');
-			n--;
+			}
 		}
-		_putchar('\n');
 	}
 }
