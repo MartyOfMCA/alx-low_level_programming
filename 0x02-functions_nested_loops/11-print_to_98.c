@@ -9,13 +9,13 @@
  **/
 void print_to_98(int number)
 {
-	if (number <= 98)
+	if (number >= 98)
 	{
-		while (number <= 98)
+		while (number >= 98)
 		{
 			printf("%d", number);
-			number++;
-			if (number < 98)
+			number--;
+			if (number > 98)
 			{
 				_putchar(',');
 				_putchar(' ');
@@ -24,11 +24,11 @@ void print_to_98(int number)
 	}
 	else
 	{
-		while (number >= 98)
+		while (number <= 98)
 		{
 			printf("%d", number);
-			number--;
-			if (number > 98)
+			number++;
+			if (number < 98)
 			{
 				_putchar(',');
 				_putchar(' ');
