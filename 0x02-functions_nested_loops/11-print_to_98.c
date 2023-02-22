@@ -15,8 +15,10 @@ void print_to_98(int number)
 		{
 			printf("%d", number);
 			number--;
-			if (number >= 98)
-			{	
+			if (number > 98)
+			{
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
