@@ -13,7 +13,7 @@ void print_to_98(int number)
 	{
 		while (number <= 98)
 		{
-			printf(number);
+			printf("%d", number);
 			number++;
 			if (number < 98)
 			{
@@ -36,5 +36,4 @@ void print_to_98(int number)
 			}
 		}
 	}
-	_putchar('\n');
 }
