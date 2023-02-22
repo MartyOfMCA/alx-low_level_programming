@@ -17,8 +17,7 @@ void print_to_98(int number)
 			number--;
 			if (number > 98)
 			{
-				puts(",");;
-				puts(" ");;
+				printf(",");
 			}
 		}
 	}
