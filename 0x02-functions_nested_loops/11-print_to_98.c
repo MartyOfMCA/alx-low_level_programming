@@ -31,7 +31,7 @@ void print_to_98(int number)
 			if (number > 98)
 			{
 				_putchar(',');
-				_putchar(' ')
+				_putchar(' ');
 			}
 		}
 	}
