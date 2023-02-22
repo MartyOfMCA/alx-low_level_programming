@@ -24,15 +24,14 @@ void print_to_98(int number)
 	}
 	else
 	{
-		int lower_bound = 98;
-
-		while (number > lower_bound)
+		while (number > 98)
 		{
-			printf("%d", lower_bound);
-			lower_bound++;
-			if (lower_bound > number)
+			printf("%d", number);
+			number--;
+			if (number > 98)
 			{
 				_putchar(',');
+				_putchar(' ')
 			}
 		}
 	}
