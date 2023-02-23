@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _isupper - Checks whether accept numeric representation
+ * _isupper - Checks whether numeric representation
  * of a character is an uppercase.
  *
  * @c: The numeric representation for the character
@@ -10,7 +10,7 @@
  **/
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 91)
+	if (c >= 'A' && c <= 'Z')
 		return (1);
 	return (0);
 }
