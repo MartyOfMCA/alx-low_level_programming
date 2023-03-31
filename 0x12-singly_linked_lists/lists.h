@@ -15,14 +15,12 @@
  */
 typedef struct list_s
 {
-    char *str;
-    unsigned int len;
-    struct list_s *next;
-} list_ti;
+	char *str;
+	unsigned int len;
+	struct list_s *next;
+} list_t;
 
 int _putchar(char c);
-void _puts(char *);
-void print_node(list_t *node);
 
 size_t print_list(const list_t *h);
 size_t list_len(const list_t *h);
