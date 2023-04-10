@@ -5,6 +5,7 @@
 #include <stddef.h>
 #include <sys/types.h>
 #include <unistd.h>
+#include <stdlib.h>
 
 int _strlen(char *str);
 
