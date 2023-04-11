@@ -12,7 +12,7 @@
  **/
 int main(int argc, char *argv[])
 {
-	int file_from, file_to, chars_read;
+	int file_from, file_to, chars_read, chars_written;
 	char *str = malloc(sizeof(char) * 1024);
 
 	if (argc != 3)
@@ -36,7 +36,17 @@ int main(int argc, char *argv[])
 	}
 	do {
 		chars_read = read(file_from, str, 1024);
-		write(file_to, str, chars_read);
+		if (chars_read == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+			exit(98);
+		}
+		chars_written = write(file_to, str, chars_read);
+		if (chars_written == -1)
+		{
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
+			exit(99);
+		}
 	} while (chars_read != 0);
 	free(str);
 	if (close(file_from) < 0)
