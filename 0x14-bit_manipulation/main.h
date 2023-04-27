@@ -17,5 +17,6 @@ bool _isbitsonly(const char *str);
 int bit_exponent(int bit, int index);
 int _strlen(const char *str);
 int _getbit(char bit_str);
+int get_endianness(void);
 
 #endif
