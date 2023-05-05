@@ -1,7 +1,13 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
+#include <stdbool.h>
+#include <stddef.h>
+
+int _strlen(const char *str);
+int bit_exponent(int bit, int index);
+bool _isbitsonly(const char *str);
+int _getbit(char bit_str);
 
 unsigned int binary_to_uint(const char *b);
 void print_binary(unsigned long int n);
