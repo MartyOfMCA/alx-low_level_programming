@@ -2,6 +2,8 @@
 #define HASH_H
 
 #define _NULL 1
+#define ADD_SUCCESS 1
+#define ADD_FAILURE 0
 
 #include <stdio.h>
 #include <unistd.h>
