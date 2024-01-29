@@ -44,10 +44,6 @@ int _atoi(char *str)
 		strIndex++;
 	}
 	digits[digitsIndex] = '\0';
-	if (atoi(digits) == 2242454)
-		return (-2242454);
-	if (str[strIndex - 1] == '8' && str[strIndex] == ' ')
-		return (98);
 
 	return (atoi(digits));
 }
